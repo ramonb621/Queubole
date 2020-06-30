@@ -1,0 +1,35 @@
+{
+  "name": "neighborly",
+  "version": "1.0.0",
+  "description": "community communication and assistance application",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramonb621/Neighborly.git"
+  },
+  "author": "Ramon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramonb621/Neighborly/issues"
+  },
+  "homepage": "https://github.com/ramonb621/Neighborly#readme"
+}
