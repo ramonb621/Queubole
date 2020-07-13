@@ -1,0 +1,6 @@
+DROP DATABASE IF EXISTS queubole;
+CREATE DATABASE queubole;
+
+USE queubole;
+
+-- CREATE TABLE
