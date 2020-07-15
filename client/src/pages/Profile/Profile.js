@@ -12,6 +12,7 @@ class Profile extends Component {
     render() {
         return (
             <Container>
+                <div className="image"></div>
                 <Connections />
             </Container>
         );

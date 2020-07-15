@@ -1,9 +1,13 @@
 import React from "react";
+import { Navbar } from "../Navbar";
 import "./style.css";
 
 function Title() {
   return (
-    <h1 className="title">Queubole!</h1>
+    <div className="title">
+      Queubole!
+      <Navbar />
+    </div>
   );
 }
 

@@ -5,7 +5,9 @@ import "./style.css"
 export function Connections(props) {
     return(
         <Col>
-            <div className="connections" {...props}/>
+            <div className="connections">
+                <i className="far fa-id-badge" {...props}/>
+            </div>
         </Col>
     )
 };

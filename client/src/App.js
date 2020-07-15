@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import Profile from "./pages/Profile/Profile";
 import Title from "./components/Title";
 import { Navbar } from "./components/Navbar";
+import { Container, Col, Row } from "./components/Grid"
 import './App.css';
 
 function App() {
@@ -11,7 +12,6 @@ function App() {
     <Router>
       <div className="App">
         <Title />
-        <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/profile" component={Profile} />
