@@ -1,10 +1,9 @@
 import React, { Component, Fragment } from "react";
 import { Container, Col, Row } from "../../components/Grid";
 import { Link, Redirect } from "react-router-dom";
-import { Music } from "../../components/Music";
 import { Connections } from "../../components/ConnectionsBox"
 
-class Profile extends Component {
+class Music extends Component {
 
     componentDidMount() {
 
@@ -13,12 +12,10 @@ class Profile extends Component {
     render() {
         return (
             <Container>
-                <div className="image"></div>
-                <Connections />
-                <Music />
+                <div className="results"></div>
             </Container>
         );
     }
 }
 
-export default Profile;
+export default Music;
