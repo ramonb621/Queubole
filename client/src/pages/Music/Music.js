@@ -12,6 +12,10 @@ class Music extends Component {
     render() {
         return (
             <Container>
+                <div className="search">
+                    <input className="search-input" type="text" placeholder="Search music..."></input>
+                    <button className="music-search">Search</button>
+                </div>
                 <div className="results"></div>
             </Container>
         );

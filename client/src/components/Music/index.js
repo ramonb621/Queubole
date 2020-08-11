@@ -7,10 +7,10 @@ export function Music(props) {
         <Col>
             <div className="music">
                 <div className="controls">
-                    <i class="fas fa-step-backward"></i>
+                    <button><i class="fas fa-step-backward"></i></button>
                     {/* <i class="fas fa-pause"></i> */}
-                    <i class="fas fa-play"></i>
-                    <i class="fas fa-step-forward"></i>
+                    <button><i class="fas fa-play"></i></button>
+                    <button><i class="fas fa-step-forward"></i></button>
                 </div>
             </div>
         </Col>
